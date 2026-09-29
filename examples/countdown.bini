@@ -1,0 +1,11 @@
+load r0 3
+load r1 1
+
+loop:
+print r0
+sub r0 r0 r1
+jz r0 end
+jmp loop
+
+end:
+halt
